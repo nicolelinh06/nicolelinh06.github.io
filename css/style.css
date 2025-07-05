@@ -328,7 +328,12 @@ body {
   }
 
   .header-container .btn {
-    border-radius: 5px;
-    width: 80%;
+    width: 100%;
+    min-height: 300px;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
