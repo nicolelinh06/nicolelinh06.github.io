@@ -191,10 +191,15 @@ body {
 
 .project-info {
   display: flex;
+  flex-direction: column; /* Stack bio and links vertically */
   justify-content: space-between;
-  opacity: 0;
+  opacity: 1; /* Make it visible */
   position: relative;
   transition: 0.5s ease-in-out;
+  padding: 1rem;
+  height: 100%; /* Ensures it fills the card */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .project-bio {
@@ -202,8 +207,11 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  top: 160px;
-  left: 10px;
+  top: 0;
+  left: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 /* Footer */
